@@ -48,7 +48,7 @@ jobs:
         run: flutter build apk  --flavor staging --target lib/main_staging.dart
 
       # Upload generated apk to the artifacts.
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v3
         with:
           name: staging-apk
           path: build/app/outputs/flutter-apk/app-staging-release.apk
